@@ -83,6 +83,8 @@ If you would like to contribute to the gem, you can find the project on GitHub.
 
 [GitHub Repository](https://github.com/seanrobenalt/good-receipt)
 
+[RubyGems](https://rubygems.org/gems/good_receipt)
+
 Feel free to submit issues, create pull requests, or contribute in any way you find valuable. We welcome your contributions!
 
 Thank you for using the gem!
