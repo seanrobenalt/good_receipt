@@ -1,6 +1,6 @@
 # Good Receipt Gem
 
-The "good_receipt" gem is a Ruby library for generating and managing receipts. This document provides instructions on how to install the gem, set configuration variables, retrieve a Google Cloud Storage key file, and use the `GoodReceipt::Receipt` class to create receipts.
+This gem is a Ruby library for generating and managing receipts. This document provides instructions on how to install the gem, set configuration variables, retrieve a Google Cloud Storage key file, and use the `GoodReceipt::Receipt` class to create receipts.
 
 ## Installation
 
@@ -45,7 +45,7 @@ Ensure that the key file is stored in a secure location and is accessible for au
 
 ### Creating a Receipt
 
-To create a receipt you'll need to pass your data in specific format to the `GoodReceipt::Receipt` class. If your data is not structured correctly, an error will be thrown with exactly what's expected. Here's an example:
+To create a receipt you'll need to pass your data in a specific format to the `GoodReceipt::Receipt` class. If your data is not structured correctly, an error will be thrown with exactly what's expected. Here's an example:
 
 ```ruby
 receipt_data = {
