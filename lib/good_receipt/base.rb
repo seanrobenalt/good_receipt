@@ -6,7 +6,7 @@ require_relative 'index'
 module GoodReceipt
   class Configuration
     attr_accessor :business_name, :business_phone, :business_email, :storage_bucket, :storage_project_id,
-                  :storage_credentials
+                  :storage_credentials, :logo_path
 
     def initialize
       @business_name = 'Business Name'
@@ -15,6 +15,7 @@ module GoodReceipt
       @storage_project_id = 'google-cloud-project'
       @storage_bucket = 'google-cloud-bucket-name'
       @storage_credentials = '/path/to/credentials'
+      @logo_path = nil
     end
   end
 
@@ -65,7 +66,7 @@ module GoodReceipt
 
       pdf.table(
         [
-          [title, '', { image: './images/main.png', position: :right }],
+          [title, '', { image: GoodReceipt.configuration&.logo_path || './images/main.png', position: :right }],
           [col1, '', col2]
         ],
         width: pdf.bounds.width,
