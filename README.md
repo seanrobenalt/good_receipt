@@ -13,6 +13,7 @@ Before using the gem, you should configure it with the following variables:
 - `business_name`: Name of your business.
 - `business_phone`: Business phone number.
 - `business_email`: Business email address.
+- `logo_path`: Path to an image of your business logo.
 - `storage_project_id`: Google Cloud project ID.
 - `storage_bucket`: Google Cloud Storage bucket name.
 - `storage_credentials`: Path to your Google Cloud Storage key file.
@@ -26,6 +27,7 @@ GoodReceipt.configure do |config|
   config.business_name = 'Your Business Name'
   config.business_phone = '(000) 111-1234'
   config.business_email = 'business@example.com'
+  config.logo_path = '/path/to/your/logo.png'
   config.storage_project_id = 'your-project-id'
   config.storage_bucket = 'your-bucket-name'
   config.storage_credentials = '/path/to/your/credentials.json'
